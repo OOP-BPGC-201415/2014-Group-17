@@ -8,7 +8,7 @@ Sequence Diagram: The order in which the application is used,which in turn depic
 
 Collaboration diagram: Each class functions independantly relying only on it's own functions. Hence the collaberation diagram only has self loops. However all the classes implement the interface login which defines the login function and the check rules function. Hence, ALL classes collaberate with login interface.
 
-Activity diagram: The sequence of activities taking place in the working of the application beginiing at the login stage and commencing at the logout stage have been depicted. ONe the login activity is completed the actvities are branched out according to the resposibility of the user. Subsequent activities are then depicted.
+Activity diagram: The sequence of activities taking place in the working of the application beginiing at the login stage and commencing at the logout stage have been depicted. Once the login activity is completed the actvities are branched out according to the resposibility of the user. Subsequent activities are then depicted. Hostel members however can be exemted from login because general functions like checking event schedule and rules do not need special access.
 
 Junit Tests:
 
