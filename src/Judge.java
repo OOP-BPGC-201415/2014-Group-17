@@ -14,13 +14,13 @@ public class Judge
 	}
 
 	// Functions
-	public void SubmitEventScores(String event, String first, String second, String third)
+	public void SubmitEventScores(String first, String second, String third)
 	{
 		Database.connect();
 		try
 		{
 			ResultSet rs = Database.runQuery("SELECT Score FROM Scoreboard WHERE Hostel IN ('" + first + "','" + second + "','" + third + "')");
-			ResultSet rs2 = Database.runQuery("SELECT " + first + "," + second + "," + third + " FROM events_participation WHERE Event = '" + event + "'");
+			ResultSet rs2 = Database.runQuery("SELECT " + first + "," + second + "," + third + " FROM events_participation WHERE Event = '" + this.event + "'");
 			rs2.next();
 			rs.next();
 			if(rs2.getInt(first) == 1)
@@ -65,7 +65,6 @@ public class Judge
 		Database.close();
 	}
 
-	// Get methods
 	// Get methods
 	public String getName()
 	{
