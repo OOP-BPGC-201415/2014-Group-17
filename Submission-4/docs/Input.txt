@@ -1,0 +1,72 @@
+usecase_name: Convenor
+	sample input:	<username>: convenor
+					<password>:pass
+					<Option1>:events
+					<Option2>:View existing events
+	sample output:	Events table
+	
+	sample input:	<username>: <convenor>
+					<password>:pass
+					<option1>:transactions
+					<option2>:view transaction details
+	sample output:	Transaction table				
+
+	sample input:	<username>: <convenor>
+					<password>:pass
+					<option1>:transactions		
+					<option2>:add new transaction
+	sample output: transaction form
+					event is added to database
+	
+	
+usecase_name: Event Head
+	sample input:	<login>: eventhead
+				    <password>:pass
+					<Option1>:events
+					<Option2>:view
+	sample output:Events table				
+
+	sample input:	<login>: eventhead
+				    <password>:pass
+					<Option1>View Participants
+					<Option2>choose event
+	sample output: Participant list
+
+	
+usecase_name: Finance Head
+	sample input:	<login>: financehead
+				<password>:pass
+				<Option1>:Sponsors
+				<Option2>:Add a sponsor
+				
+	sample output:	Sponsor is added to database
+	
+	sample input:	<login>: financehead
+				<password>:pass
+				<Option1>:Transaction
+				<Option2>:add new transaction
+				sample output: transaction form
+					           event is added to database
+							   
+							   
+usecase_name: Hostel Representative
+				<username>:ch5
+				<password>:pass
+				<Option1>:Register Teams
+				<Option 2>:Add new team
+				<Option 3>: Choose an event
+	sample output:	Team registered.
+	
+				<username>:ch5
+				<password>:pass
+				<Option1>:Place bets
+				<Option 2>:Select event
+	sample output: Bet placed
+	
+usecase_name: Judge
+	sample input:	<login>: judge
+				<password>:pass
+				<Scores>
+				<Option 1>:Add scores
+				<Option 2>:Fill form
+	sample output:	Score updated
